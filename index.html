@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zuvairiya's Snake and Ladder Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Zuvairiya's Snake and Ladder Game</h1>
+    </header>
+    <div class="container">
+        <div id="rules">
+            <h2>Game Rules</h2>
+            <p>1. Each player rolls the dice...</p>
+            <!-- Add more rules as needed -->
+        </div>
+        <div id="gameArea">
+            <div id="playerInput">
+                <label for="numPlayers">Number of Players: </label>
+                <select id="numPlayers">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4" selected>4</option>
+                </select>
+                <button id="startGame">Start Game</button>
+            </div>
+            <div id="gameBoard"></div>
+            <button id="rollDice">Roll Dice</button>
+            <div id="diceResult"></div>
+            <div id="playerInfo"></div>
+        </div>
+        <div id="playerStatus">
+            <!-- Player status table will be updated here dynamically -->
+        </div>
+    </div>
+    <footer>
+        <p>Created by Zuvairiya</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

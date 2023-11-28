@@ -1,0 +1,104 @@
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(10, 50px);
+    grid-template-rows: repeat(10, 50px);
+    width: 500px;
+    height: 500px;
+    margin: 20px auto;
+    border: 2px solid black;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.cell {
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    position: relative;
+}
+
+.cell:nth-child(odd) {
+    background-color: #b0e0e6;
+}
+
+.cell:nth-child(even) {
+    background-color: #87ceeb;
+}
+
+#rollDice {
+    margin: 10px auto;
+    display: block;
+}
+
+.player {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 5px;
+}
+
+.player1 { background-color: red; }
+.player2 { background-color: blue; }
+.player3 { background-color: green; }
+.player4 { background-color: yellow; }
+
+header, footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+}
+
+header {
+    border-bottom: 2px solid #0056b3;
+}
+
+footer {
+    border-top: 2px solid #0056b3;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+h1 {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    padding: 20px;
+}
+
+#rules {
+    width: 20%;
+    padding: 10px;
+    border-right: 2px solid #ddd;
+}
+
+#gameArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+#playerStatus {
+    width: 20%;
+    padding: 10px;
+    border-left: 2px solid #ddd;
+}
+
+.start-point, .winning-point {
+    font-weight: bold;
+    color: white;
+    background-color: green;
+}
+
+.start-point {
+    background-color: blue;
+}
